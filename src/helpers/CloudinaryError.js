@@ -3,8 +3,7 @@
  */
 class CloudinaryError extends Error {
   /**
-   * Cloudinary response object
-   * @param {Object} response
+   * @param {Object} response - Cloudinary response object
    */
   constructor(response) {
     super(response.error.message);
