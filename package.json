@@ -1,18 +1,20 @@
 {
-  "name": "javascript-utils",
-  "description": "Collection of Javascript utils for your application.",
+  "name": "express-utils",
+  "description": "Collection of Expressjs utils for your application.",
   "author": "Vince Chavez <vchavez92780@gmail.com> (http://github.com/pcs2112)",
   "license": "MIT",
   "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pcs2112/javascript-utils"
+    "url": "https://github.com/pcs2112/express-utils"
   },
-  "homepage": "https://github.com/pcs2112/javascript-utils",
+  "homepage": "https://github.com/pcs2112/express-utils",
   "keywords": [
     "Javascript",
     "Utils",
     "Webpack",
+    "Node",
+    "Express",
     "es6"
   ],
   "main": "./lib",
