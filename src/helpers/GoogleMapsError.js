@@ -1,5 +1,5 @@
 /**
- * Error class used to normalized Google Maps API errors.
+ * Error class used to normalize Google Maps API errors.
  */
 class GoogleMapsError extends Error {
   /**

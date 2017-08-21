@@ -1,5 +1,5 @@
 /**
- * Error class used to normalized Cloudinary API errors.
+ * Error class used to normalize Cloudinary API errors.
  */
 class CloudinaryError extends Error {
   /**
