@@ -9,9 +9,9 @@ class CustomError extends Error {
    *
    * @param {Number} status
    * @param {String} msg
-   * @param {Object|undefined} errors
+   * @param {Object|null} errors
    */
-  constructor(status, msg, errors) {
+  constructor(status, msg, errors = null) {
     super(msg);
     Error.captureStackTrace(this, CustomError);
     this.name = 'CustomError';
