@@ -1,4 +1,4 @@
-import CustomError from '../helpers/CustomError';
+import { CustomError } from '../errors';
 import { isEmpty } from 'javascript-utils/lib/utils';
 
 /**

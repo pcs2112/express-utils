@@ -1,5 +1,5 @@
 import { isNumber, normalizeInputToInteger } from 'javascript-utils/lib/number';
-import CustomError from '../helpers/CustomError';
+import { CustomError } from '../errors';
 
 /**
  * Normalizes the list of query params to integers.

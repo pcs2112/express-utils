@@ -1,4 +1,4 @@
-import CustomError from '../helpers/CustomError';
+import { CustomError } from '../errors';
 
 /**
  Middleware to handle middleware errors

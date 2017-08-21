@@ -1,7 +1,7 @@
 /**
  * Middleware used to prevent unauthenticated users to access a route.
  */
-import CustomError from '../helpers/CustomError';
+import { CustomError } from '../errors';
 
 export default (req, res, next) => {
   if (!req.isAuthenticated || !req.isAuthenticated()) {
