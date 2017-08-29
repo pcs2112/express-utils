@@ -26,7 +26,8 @@
     "javascript-utils": "git+https://github.com/pcs2112/javascript-utils.git",
     "lodash": "^4.17.4",
     "moment": "^2.18.1",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "xss-filters": "^1.2.7"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
