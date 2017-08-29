@@ -16,7 +16,7 @@ const clean = (obj) => {
 
     if (typeof obj[key] === 'object') {
       clean(obj[key]);
-    } else if (typeof req.body[key] === 'string') {
+    } else if (typeof obj[key] === 'string') {
       obj[key] = xssFilters.inHTMLData(obj[key].trim());
     }
   });
