@@ -17,15 +17,15 @@ const clean = (obj) => {
     if (typeof obj[key] === 'object') {
       clean(obj[key]);
     } else if (typeof obj[key] === 'string') {
-      obj[key] = xssFilters.inHTMLData(obj[key].trim());
+      obj[key] = xssFilters.inHTMLData(obj[key].trim()); // eslint-disable-line
     }
   });
 };
 
-export default (types) => (req, res, next) => {
+export default types => (req, res, next) => {
   let normalizedTypes;
   if (typeof types === 'string') {
-    normalizedTypes = types.split(',').map((type) => type.trim());
+    normalizedTypes = types.split(',').map(type => type.trim());
   }
 
   ['body', 'query', 'params'].forEach((type) => {

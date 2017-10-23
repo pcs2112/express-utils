@@ -1,5 +1,5 @@
-import { CustomError } from '../errors';
 import { isEmpty } from 'javascript-utils/lib/utils';
+import { CustomError } from '../errors';
 
 /**
  * Verifies the list of specified query params
@@ -11,7 +11,8 @@ import { isEmpty } from 'javascript-utils/lib/utils';
 export default (queryParams = [], type = 'query') => (req, res, next) => {
   const missingParams = [];
   queryParams.forEach((queryParam) => {
-    if (!req[type].hasOwnProperty(queryParam) || isEmpty(req[type][queryParam])) {
+    if (!Object.prototype.hasOwnProperty.call(req[type], queryParam)
+      || isEmpty(req[type][queryParam])) {
       missingParams.push(queryParam);
     }
   });

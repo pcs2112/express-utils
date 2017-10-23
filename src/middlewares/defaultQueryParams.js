@@ -6,7 +6,7 @@
  */
 export default (queryParams = {}, type = 'query') => (req, res, next) => {
   Object.keys(queryParams).forEach((queryParam) => {
-    if (!req[type].hasOwnProperty(queryParam)) {
+    if (!Object.prototype.hasOwnProperty.call(req[type], queryParam)) {
       req[type][queryParam] = queryParams[queryParam];
     }
   });

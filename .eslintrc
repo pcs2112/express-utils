@@ -1,4 +1,5 @@
 {
+  "parser": "babel-eslint",
   "extends": "eslint-config-airbnb",
   "env": {
     "browser": true,
@@ -18,7 +19,8 @@
     "no-console": 0,
     "no-alert": 0,
     "id-length": [2, {"min": 1}],
-    "no-var": 0
+    "no-var": 0,
+    "no-plusplus": 0
   },
   "plugins": [
     "import"

@@ -10,7 +10,8 @@ import { CustomError } from '../errors';
 export default (queryParams = [], type = 'query') => (req, res, next) => {
   const invalidParams = [];
   queryParams.forEach((queryParam) => {
-    if (req[type].hasOwnProperty(queryParam) && isNumber(req[type][queryParam])) {
+    if (Object.prototype.hasOwnProperty.call(req[type], queryParam)
+      && isNumber(req[type][queryParam])) {
       req[type][queryParam] = normalizeInputToInteger(req[type][queryParam]);
     } else {
       invalidParams.push(queryParam);
