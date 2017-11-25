@@ -25,6 +25,10 @@ export default (err, req, res, next) => { // eslint-disable-line no-unused-vars
     error.message = err.message;
   }
 
+  // Set the response status code
   res.status(status);
+  error.status = status;
+
+  // Send the json payload
   res.json(error);
 };
