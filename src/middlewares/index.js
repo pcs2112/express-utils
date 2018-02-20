@@ -7,3 +7,4 @@ export normalizeQueryParamsToFloat from './normalizeQueryParamsToFloat';
 export normalizeQueryParamsToInteger from './normalizeQueryParamsToInteger';
 export requiredQueryParams from './requiredQueryParams';
 export sanitize from './sanitize';
+export userTypeAccess from './userTypeAccess';
